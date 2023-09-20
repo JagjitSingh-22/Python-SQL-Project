@@ -5,7 +5,7 @@ import pymysql
 
 def withdra():
     def withdrawal():
-        con=pymysql.connect(host='localhost',user='root',password='jagjit',database='dataproject')
+        con=pymysql.connect(host='',user='',password='',database='dataproject')
         cursor=con.cursor()
         query='select * from Customer where User=%s and Password=%s'
         cursor.execute(query,(usernameentry.get(),passwordentry.get()))
