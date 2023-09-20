@@ -21,7 +21,7 @@ def check():
         messagebox.showerror('Error','Invalid Input for number')
     else:
         try:
-            con=pymysql.connect(host='localhost',user='root',password='jagjit')
+            con=pymysql.connect(host='',user='',password='')
             cursor=con.cursor()
             #query='create table Customer(id int auto_increment primary key not null,User varchar(100),Password varchar(20),Balance varchar(20),Mobile varchar(15))'
             #cursor.execute(query)
