@@ -34,7 +34,7 @@ def loginuser():
         messagebox.showerror("Error","All fields are required")
     else:
         try:
-            con=pymysql.connect(host='localhost',user='root',password='jagjit')
+            con=pymysql.connect(host='',user='',password='')
             cursor=con.cursor()
         except:
             messagebox.showerror("Error","Connection is not established try again")
