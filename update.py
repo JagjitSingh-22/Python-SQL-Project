@@ -4,9 +4,9 @@ import pymysql
 from tkinter import messagebox
 
 def updatedata():
-    '''
+    
     try:
-        con=pymysql.connect(host='localhost',user='root',password='jagjit')
+        con=pymysql.connect(host='',user='',password='')
         cursor=con.cursor()
     except:
         messagebox.showerror("Error","Connection is not established try again")
@@ -20,7 +20,7 @@ def updatedata():
         messagebox.showerror("Error","Invalid Username or Password")
     else:
         messagebox.showinfo("Welcome","Login is Successful")
-    '''
+    
 up=Tk()
 up.title("Update Record")
 bgimage=ImageTk.PhotoImage(file='bg.jpg')
