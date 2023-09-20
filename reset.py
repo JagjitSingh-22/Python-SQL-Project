@@ -24,7 +24,7 @@ def passc():
     elif usernameentry.get()!=passwordentry.get():
         messagebox.showerror('Error','Password Mismatch')
     else:
-        con=pymysql.connect(host='localhost',user='root',password='jagjit',database='dataproject')
+        con=pymysql.connect(host='',user='',password='',database='dataproject')
         cursor=con.cursor()
         query='select * from Customer where User=%s'
         cursor.execute(query,user.get())
